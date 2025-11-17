@@ -1,3 +1,8 @@
+@font-face {
+    font-family: right;
+    src: url();
+}
+
 .imagedefond {
     background-image: url("/amuhome/b25015125/Téléchargements/fondKebab.jpg");
     background-repeat: no-repeat;
@@ -11,14 +16,17 @@
 
 .imagemain {
     background-color: black;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 125vh;
     width: 100%;
-    position: relative; 
+    position: relative;
     border-radius: 30px;
+
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: top;     /* centre verticalement */
 }
+
+
 
 .newEvent {
     position: absolute;
@@ -27,17 +35,18 @@
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 42px;
+    font-family:"righ" ;
     font-weight: bold;
 }
 
 .center-container {
-    width: 100%;              /* Taille du bloc */
-    margin: 0 auto;          /* Centre horizontalement */
-    margin-top: 60px;        /* Espace au-dessus */
-    background: rgb(10, 10, 10);       /* Optionnel */
-    padding: 50px;           /* Optionnel */
-    border-radius: 20px;     /* Optionnel */
+    width: 60%;
+    margin: 0 auto;
+    background: rgb(10, 10, 10);
+    padding: 50px;
+    border-radius: 20px;
 }
+
 
 .row {
     display: flex;
@@ -53,11 +62,6 @@
 .col-value {
     flex: 1;
 }
-
-
-
-
-
 
 
 @media (prefers-color-scheme: dark) {
