@@ -3,11 +3,21 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    
-    height: 100vh;
+    height: 125vh;
     width: 100%;
     position: relative; 
+    border-radius: 30px;
+}
+
+.imagemain {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 125vh;
+    width: 100%;
+    position: relative; 
+    border-radius: 30px;
 }
 
 .newEvent {
@@ -15,10 +25,51 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
     font-size: 42px;
     font-weight: bold;
+}
 
-    
+.center-container {
+    width: 100%;              /* Taille du bloc */
+    margin: 0 auto;          /* Centre horizontalement */
+    margin-top: 60px;        /* Espace au-dessus */
+    background: rgb(10, 10, 10);       /* Optionnel */
+    padding: 50px;           /* Optionnel */
+    border-radius: 20px;     /* Optionnel */
+}
+
+.row {
+    display: flex;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.col-label {
+    width: 200px;
+    font-weight: bold;
+}
+
+.col-value {
+    flex: 1;
+}
+
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+body {
+background-color: #000000;
+color: #fefefe;
+}
+a {
+color: #5fa9ee;
+}
+img {
+filter: grayscale(20%);
+border-radius: 30px;
+}
 }
