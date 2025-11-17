@@ -1,11 +1,33 @@
 @font-face {
   font-family: 'righteous';
-  src: url('assets/fonts/Righteous-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Righteous-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 body {
-	font-family: 'righteous';
+  background-color: black;
+  font-family: 'righteous';
+  color: whitesmoke;
+}
+
+header {
+  margin: 0;
+  background-image: url('../assets/images/reception-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
