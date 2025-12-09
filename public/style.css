@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'roboto mono';
+  src: url('../assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -80,6 +87,7 @@ nav ul {
 .data {
   display: flex;
   flex-direction: column;
+  font-family: 'roboto mono';
 }
 
 .registration {
@@ -92,6 +100,58 @@ nav ul {
   color: #0f172a;
   font-weight: 600;
   text-decoration: none;
+  font-family: 'roboto mono';
+}
+
+footer {
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/images/carbon-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'roboto mono';
+  gap: 25vh;
+  margin-top: 2.5em;
+  margin-bottom: 10em;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.legal-notices {
+  max-width: 70vh;
+  line-height: 1.4;
+  font-size: 3vh;
+}
+
+h3 p {
+  font-size: clamp(32px, 5vw, 54px);
+  margin: 0.5em 1em;
+  font-size: 3.5rem;
+}
+
+#h3-A {
+  text-align: start;
+}
+
+#h3-B {
+  text-align: center;
+}
+
+#h3-C {
+  text-align: end;
+
 }
 
 .top-link {
