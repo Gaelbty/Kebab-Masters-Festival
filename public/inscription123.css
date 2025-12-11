@@ -118,3 +118,75 @@ filter: grayscale(20%);
 border-radius: 30px;
 }
 }
+
+
+footer {
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/images/carbon-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'roboto mono';
+  gap: 25vh;
+  margin-top: 2.5em;
+  margin-bottom: 10em;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.legal-notices {
+  max-width: 70vh;
+  line-height: 1.4;
+  font-size: 3vh;
+}
+
+
+
+
+#h3-A {
+  text-align: start;
+}
+
+#h3-B {
+  text-align: center;
+}
+
+#h3-C {
+  text-align: end;
+
+}
+
+
+
+.top-link {
+  display:none;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3dd46d;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
