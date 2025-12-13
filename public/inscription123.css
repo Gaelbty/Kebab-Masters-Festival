@@ -53,12 +53,6 @@
     font-size: 1.5rem;   /* Ajustez la taille si besoin */
 }
 
-.deux {
-  list-style-position: outside;
-  list-style-type: circle;
-}
-
-
 .newEvent { 
     top: 50%;
     left: 50%;
