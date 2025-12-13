@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Righteous-Regular';
-    src: url(../assets/fonts/Righteous-Regular.ttf);
+    src: url(assets/fonts/Righteous-Regular.ttf);
 }
 @font-face {
     font-family: 'RobotoMono-Regular';
-    src: url(../assets/fonts/RobotoMono-Regular.ttf);
+    src: url(assets/fonts/RobotoMono-Regular.ttf);
 }
 
 .header {
-    background-image: url("../assets/images/fondKebab.jpg");
+    background-image: url("assets/images/fondKebab.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -117,7 +117,7 @@ border-radius: 30px;
 footer {
   position: relative;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/images/carbon-background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("assets/images/carbon-background.jpg");
   background-size: cover;
   background-position: center;
   color: white;
