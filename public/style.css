@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'righteous';
-  src: url('../assets/fonts/Righteous-Regular.ttf') format('truetype');
+  src: url('assets/fonts/Righteous-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'roboto mono';
-  src: url('../assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  src: url('assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,7 +27,7 @@ body {
 header {
   position: relative;
   box-sizing: border-box;
-  background-image: url("../assets/images/reception-background.jpg");
+  background-image: url("assets/images/reception-background.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -128,7 +128,7 @@ nav ul {
 footer {
   position: relative;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/images/carbon-background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("assets/images/carbon-background.jpg");
   background-size: cover;
   background-position: center;
   color: white;
