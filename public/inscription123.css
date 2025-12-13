@@ -58,7 +58,7 @@
     left: 50%;
     text-align: center;
     
-    font-family:'Righteous-Regular';
+    font-family:'righteous';
     color: #000000;
     font-weight: bold;
 
@@ -70,7 +70,7 @@
     background: rgb(23, 22, 22);
     padding: 50px;
     border-radius: 20px;
-    font-family: 'Righteous-Regular';
+    font-family: 'righteous-Regular';
 }
 
 .center-container .row {
@@ -90,12 +90,12 @@
 .col-label {
     width: 200px;
     font-weight: bold;
-    font-family: 'RobotoMono-Regular';
+    font-family: 'roboto-mono';
 }
 
 .col-value {
     flex: 1;
-    font-family:'RobotoMono-Regular';
+    font-family:'roboto-mono';
 }
 
 
@@ -122,16 +122,22 @@ footer {
   background-position: center;
   color: white;
   min-height: 100vh;
-  padding: 0.5rem;
+  padding: 1.5rem;
 }
 
 .top-footer {
   display: flex;
   justify-content: space-around;
   font-family: 'roboto mono';
-  gap: 25vh;
-  margin-top: 2.5em;
-  margin-bottom: 10em;
+  gap: 5vw;
+  margin-top: 2.5rem;
+  margin-bottom: 10rem;
+  font-size: 1.5vw;
+}
+
+address {
+  min-width: 60vw;
+  line-height: 1.4;
 }
 
 footer a {
@@ -141,13 +147,14 @@ footer a {
 }
 
 .legal-notices {
-  max-width: 70vh;
+  max-width: 40vw;
   line-height: 1.4;
-  font-size: 3vh;
 }
 
-
-
+h3 p {
+  margin: 1rem 1.5rem;
+  font-size: 3.5rem;
+}
 
 #h3-A {
   text-align: start;
