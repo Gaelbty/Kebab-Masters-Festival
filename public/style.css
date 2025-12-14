@@ -37,8 +37,8 @@ header {
 nav a {
   text-decoration: none;
   color: inherit;
-  font-size: 3rem;
-  margin: 1rem;
+  font-size: 4vw;
+  margin: 1vw;
 }
 
 nav ul {
@@ -50,38 +50,35 @@ nav ul {
 }
 
 .header-container {
-  border: 2px solid rgb(75 70 74); /* a supprimer */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-  gap: 20vh;
+  height: 42vw;
+  gap: 10vw;
 }
 
 .title {
-  border: 2px solid rgb(95 97 110);
   display: block;
   text-align: center;
   padding: 5vh;
-  width: 10em;
-  font-size: 5rem;
+  font-size: 9vw;
 }
 
 .next-event-registration {
-  border: 2px solid rgb(95 97 110);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 95vw;
 }
 
 .next-event {
   display: flex;
   gap: 4vw;
-  padding: 16px 24px;
+  padding: 1vw 2vw;
   background-color : rgba(29, 29, 29, .9);
-  border-radius: 10px;
-  font-size: 14px;
+  border-radius: 1vw;
+  font-size: 0.9vw;
 }
 
 .data {
@@ -94,11 +91,12 @@ nav ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 30px;
-  border-radius: 999px;
+  padding: 0.5vw 1vw;
+  border-radius: 100vw;
   background: #3dd46d;
   color: #0f172a;
   font-weight: 600;
+  font-size: 1vw;
   text-decoration: none;
   font-family: 'roboto-mono';
 }
@@ -151,6 +149,17 @@ address {
   line-height: 1.4;
 }
 
+.logo {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 15vw;
+}
+
+.logo img {
+  height: auto;
+  width: 4vw;
+}
+
 footer a {
   text-decoration: none;
   color: inherit;
@@ -162,9 +171,9 @@ footer a {
   line-height: 1.4;
 }
 
-h3 p {
-  margin: 1rem 1.5rem;
-  font-size: 3.5rem;
+h3{
+  margin: 0.8vw 0.6vw;
+  font-size: 5vw;
 }
 
 #h3-A {
@@ -192,50 +201,4 @@ h3 p {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-}
-
-/* Tablette */
-@media (min-width: 600px) and (max-width: 1024px) {
-  nav a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 2rem;
-    margin: 1rem;
-  }
-
-  .title {
-    border: 2px solid rgb(95 97 110);
-    display: block;
-    text-align: center;
-    padding: 20px;
-    width: 10em;
-    font-size: 3rem;
-  }
-
-  h3 p {
-    font-size: 2.5rem;
-  }
-}
-
-/* téléphone */
-@media (max-width: 600px) {
-  nav a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.5rem;
-    margin: 0.8rem;
-  }
-
-  .title {
-    border: 2px solid rgb(95 97 110);
-    display: block;
-    text-align: center;
-    padding: 20px;
-    width: 10em;
-    font-size: 2rem;
-  }
-
-  h3 p {
-    font-size: 1.5rem;
-  }
 }
