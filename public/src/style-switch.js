@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'calendar':
         styleLink.href = style === '0' ? 'styles/calendar-1.css' : 'styles/calendar-2.css';
         break;
+      case 'about':
+        styleLink.href = style === '0' ? 'styles/about-1.css' : 'styles/about-2.css';
+        break;
     }
   }
 });
