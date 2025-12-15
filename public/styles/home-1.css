@@ -55,7 +55,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   height: 42vw;
-  gap: 10vw;
+  gap: 5vw;
 }
 
 .title {
@@ -75,10 +75,10 @@ nav ul {
 .next-event {
   display: flex;
   gap: 4vw;
-  padding: 1vw 2vw;
+  padding: 1.5vw 2.5vw;
   background-color : rgba(29, 29, 29, .9);
-  border-radius: 1vw;
-  font-size: 0.9vw;
+  border-radius: 1.5vw;
+  font-size: 1.4vw;
 }
 
 .data {
@@ -91,12 +91,12 @@ nav ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5vw 1vw;
+  padding: 0.8vw 1.2vw;
   border-radius: 100vw;
-  background: #3dd46d;
+  background: #ff4500;
   color: #0f172a;
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 1.4vw;
   text-decoration: none;
   font-family: 'roboto-mono';
 }
@@ -195,11 +195,12 @@ h3{
   bottom: 3vh;
   display: inline-block;
   padding: 12px 24px;
-  background: #3dd46d;
+  background: #ff4500;
   color: #0f172a;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  box-shadow: 0 4px 0 #c73200;
 }
 
 #style-switch {
@@ -208,4 +209,52 @@ h3{
 
 #top-link {
   right: 3vh;
+}
+
+@media (max-width: 800px) {
+  nav a {
+    font-size: 5.5vw;
+  }
+
+  .next-event {
+    gap: 5vw;
+    padding: 2.5vw 4vw;
+    border-radius: 3vw;
+    font-size: 2vw;
+  }
+
+  .registration {
+    padding: 1vw 2vw;
+    font-size: 2vw;
+  }
+
+  .main-content {
+    padding: 15vh 5vw;
+  }
+
+  .content-block h2 {
+    font-size: 4vw;
+  }
+
+  .content-block p {
+    font-size: 2.5vw; 
+  }
+
+  .top-footer {
+    flex-direction: column;
+    font-size: 2.5vw;
+    margin-bottom: 3rem;
+  }
+
+  .logo {
+    width: 25vw;
+  }
+
+  .logo img {
+    width: 6vw;
+  }
+
+  .legal-notices {
+    max-width: 60vw;
+  }
 }
