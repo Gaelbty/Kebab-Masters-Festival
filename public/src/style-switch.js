@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     applyStyle(style);
 
     document.cookie = 'style' + '=' + style + '; path=/';
-    console.log(document.cookie);
   });
 
   function applyStyle(style){

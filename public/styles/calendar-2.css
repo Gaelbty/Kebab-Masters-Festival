@@ -106,7 +106,7 @@ nav ul {
     justify-content: center;
     padding: 0.5vw 1vw;
     border-radius: 100vw;
-    background: #3dd46d;
+    background: #ff4500;
     color: #0f172a;
     font-weight: 600;
     font-size: 1vw;
@@ -199,22 +199,78 @@ h3{
 
 #style-switch,
 #top-link {
-  display:none;
-  position: fixed;  
-  bottom: 3vh;
-  display: inline-block;
-  padding: 12px 24px;
-  background: #3dd46d;
-  color: #0f172a;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+    display:none;
+    position: fixed;  
+    bottom: 3vh;
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff4500;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 0 #c73200;
 }
 
 #style-switch {
-  left: 3vh;
+    left: 3vh;
 }
 
 #top-link {
-  right: 3vh;
+    right: 3vh;
+}
+
+@media (max-width: 800px) {
+    nav a {
+        font-size: 5.5vw;
+    }
+
+    .next-event {
+        gap: 5vw;
+        padding: 2.5vw 4vw;
+        border-radius: 3vw;
+        font-size: 2vw;
+    }
+
+    .imagemain {
+        width: 80vw;
+        padding: 4vw;
+        border-radius: 6vw;
+    }
+
+    .data {
+        gap: 5vw;
+        font-size: 2vw;
+    }
+
+    .middleText h1 {
+        font-size: 4.5vw;
+    }
+
+    .middleText li {
+        font-size: 2.5vw;
+    }
+
+    .registration {
+        padding: 1vw 2vw;
+        font-size: 2.5vw;
+    }
+
+    .top-footer {
+        flex-direction: column;
+        font-size: 2.5vw;
+        margin-bottom: 3rem;
+    }
+
+    .logo {
+        width: 25vw;
+    }
+
+    .logo img {
+        width: 6vw;
+    }
+
+    .legal-notices {
+        max-width: 60vw;
+    }
 }
