@@ -148,7 +148,7 @@ footer {
     font-family: 'roboto-mono';
     gap: 5vw;
     margin-top: 2.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 10vw;
     font-size: 1.5vw;
 }
 
@@ -259,7 +259,7 @@ h3{
     .top-footer {
         flex-direction: column;
         font-size: 2.5vw;
-        margin-bottom: 3rem;
+        margin-bottom: 20vw;
     }
 
     .logo {
