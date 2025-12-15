@@ -50,13 +50,13 @@ nav ul {
 }
 
 .header-container {
-  margin-top: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 42vw;
   gap: 2vw;
+  margin-top: 2vw;
 }
 
 .title {
