@@ -104,33 +104,16 @@ nav ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5vw 1vw;
+    padding: 1vw 2vw;
     border-radius: 100vw;
     background: #ff4500;
     color: #0f172a;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-decoration: none;
     font-family: 'roboto-mono';
     margin-top: 4vh;
 }
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #000000;
-        color: #fefefe;
-    }
-
-    a {
-        color: #5fa9ee;
-    }
-
-    img {
-        filter: grayscale(20%);
-        border-radius: 30px;
-    }
-}
-
 
 footer {
     position: relative;
@@ -148,7 +131,7 @@ footer {
     font-family: 'roboto-mono';
     gap: 5vw;
     margin-top: 2.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 10vw;
     font-size: 1.5vw;
 }
 
@@ -259,7 +242,7 @@ h3{
     .top-footer {
         flex-direction: column;
         font-size: 2.5vw;
-        margin-bottom: 3rem;
+        margin-bottom: 20vw;
     }
 
     .logo {
