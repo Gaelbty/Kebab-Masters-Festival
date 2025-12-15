@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'righteous';
-    src: url(assets/fonts/Righteous-Regular.ttf);
+    src: url('../assets/fonts/Righteous-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'roboto-mono';
-    src: url(assets/fonts/RobotoMono-Regular.ttf);
+    src: url('../assets/fonts/RobotoMono-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -26,7 +26,7 @@ body {
 header {
     position: relative;
     box-sizing: border-box;
-    background-image: url("assets/images/agenda-background.jpg");
+    background-image: url('../assets/images/agenda-background.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -135,10 +135,9 @@ nav ul {
 footer {
     position: relative;
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("assets/images/carbon-background.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
     min-height: 100vh;
     padding: 1.5rem;
 }
@@ -198,16 +197,24 @@ h3{
 
 }
 
-.top-link {
-    display:none;
-    position: fixed;
-    bottom: 3vh;
-    right: 3vh;
-    display: inline-block;
-    padding: 12px 24px;
-    background: #3dd46d;
-    color: #0f172a;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+#style-switch,
+#top-link {
+  display:none;
+  position: fixed;  
+  bottom: 3vh;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3dd46d;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#style-switch {
+  left: 3vh;
+}
+
+#top-link {
+  right: 3vh;
 }

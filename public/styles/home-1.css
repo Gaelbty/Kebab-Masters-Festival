@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'righteous';
-  src: url('assets/fonts/Righteous-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Righteous-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'roboto-mono';
-  src: url('assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  src: url('../assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,7 +27,7 @@ body {
 header {
   position: relative;
   box-sizing: border-box;
-  background-image: url("assets/images/reception-background.jpg");
+  background-image: url('../assets/images/reception-background.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -126,10 +126,9 @@ nav ul {
 footer {
   position: relative;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("assets/images/carbon-background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
   min-height: 100vh;
   padding: 1.5rem;
 }
@@ -189,11 +188,11 @@ h3{
 
 }
 
-.top-link {
+#style-switch,
+#top-link {
   display:none;
-  position: fixed;  
+  position: fixed;
   bottom: 3vh;
-  right: 3vh;
   display: inline-block;
   padding: 12px 24px;
   background: #3dd46d;
@@ -201,4 +200,12 @@ h3{
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+}
+
+#style-switch {
+  left: 3vh;
+}
+
+#top-link {
+  right: 3vh;
 }
