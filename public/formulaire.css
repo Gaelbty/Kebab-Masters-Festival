@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'righteous';
+    src: url('assets/fonts/Righteous-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'roboto-mono';
+  src: url('assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+    background-image: url("assets/images/fondKebab.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 125vh;
+    width: 100%;
+    position: relative; 
+    border-radius: 30px;
+}
+
+.imagemain {
+    background-color: black;
+    height: 125vh;
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+
+    /* --- MODIFICATIONS ICI --- */
+    color: white;            /* 1. Rend tout le texte blanc (plus de texte noir sur fond noir) */
+    
+    display: flex;           /* Active le mode Flexbox */
+    flex-direction: column;  /* Empile les éléments verticalement si besoin */
+    justify-content: center; /* Centre le bloc verticalement au milieu de la page */
+    align-items: center;     /* Centre le bloc horizontalement */
+    text-align: center;      /* Force le texte à l'intérieur à se centrer */
+}
+
+.middleText ul {
+    list-style: none;
+    padding: 0;      /* Force la suppression du décalage à gauche */
+    margin: 0;       /* Supprime les marges externes */
+}
+
+.middleText ul li {
+    margin-bottom: 10px; /* Espace entre chaque ligne de texte */
+    line-height: 1.6;    /* Augmente l'espace entre les lignes d'une même phrase */
+    font-size: 1.1rem;   /* Rend le texte légèrement plus grand et lisible */
+}
+
+.middleText h1 {
+    margin-top: 40px;    /* Espace au-dessus du titre */
+    margin-bottom: 15px; /* Espace en dessous du titre */
+    font-size: 1.5rem;   /* Ajustez la taille si besoin */
+}
+
+
+.center-container {
+    width: 60%;
+    margin: 0 auto;
+    background: rgb(23, 22, 22);
+    padding: 50px;
+    border-radius: 20px;
+    font-family: 'righteous-Regular';
+}
+
+.center-container .row {
+    margin-bottom: 20px; /* Espace entre les lignes du haut */
+    width: 100%;         /* S'assure que ça prend la largeur pour bien espacer */
+}
+
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+
+.col-label {
+    width: 200px;
+    font-weight: bold;
+    font-family: 'roboto-mono';
+}
+
+.col-value {
+    flex: 1;
+    font-family:'roboto-mono';
+}
+
+
+@media (prefers-color-scheme: dark) {
+body {
+background-color: #000000;
+color: #fefefe;
+}
+a {
+color: #5fa9ee;
+}
+img {
+filter: grayscale(20%);
+border-radius: 30px;
+}
+}
+
+
+footer {
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("assets/images/carbon-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'roboto mono';
+  gap: 5vw;
+  margin-top: 2.5rem;
+  margin-bottom: 10rem;
+  font-size: 1.5vw;
+}
+
+address {
+  min-width: 60vw;
+  line-height: 1.4;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.legal-notices {
+  max-width: 40vw;
+  line-height: 1.4;
+}
+
+h3 p {
+  margin: 1rem 1.5rem;
+  font-size: 3.5rem;
+}
+
+#h3-A {
+  text-align: start;
+}
+
+#h3-B {
+  text-align: center;
+}
+
+#h3-C {
+  text-align: end;
+
+}
+
+
+
+.top-link {
+  display:none;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3dd46d;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
