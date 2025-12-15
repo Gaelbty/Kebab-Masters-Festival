@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'righteous';
+    src: url('../assets/fonts/Righteous-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto-mono';
+    src: url('../assets/fonts/RobotoMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: darkred;
+}
+
+body {
+    position: relative;
+    background-color: black;
+    font-family: 'righteous';
+}
+
+header {
+    position: relative;
+    box-sizing: border-box;
+    background-image: url('../assets/images/agenda-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 4vw;
+    margin: 1vw;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.imagemain {
+    display: flex;           /* Active le mode Flexbox */
+    flex-direction: column;  /* Empile les éléments verticalement si besoin */
+    align-items: center;     /* Centre le bloc horizontalement */
+
+    width: 60vw;
+    margin: 20vh auto;
+    background: rgb(23, 22, 22);
+    padding: 10vh;
+    border-radius: 4vw;
+}
+
+.data {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 3vw;
+    font-size: 1.2vw;
+    opacity: 0.85;
+    margin-bottom: 5vh;
+    font-family: 'roboto-mono';
+}
+
+
+.meta-headers,
+.value-1,
+.value-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.middleText {
+    display: flex;
+    flex-direction: column;
+}
+
+.middleText h1 {
+    margin-top: 4vh;    /* Espace au-dessus du titre */
+    margin-bottom: 1.5vh; /* Espace en dessous du titre */
+    font-size: 3vw;   /* Ajustez la taille si besoin */
+}
+
+.middleText ul {
+    padding: 0;      /* Force la suppression du décalage à gauche */
+    margin: 0;       /* Supprime les marges externes */
+}
+
+.middleText li {
+    margin-bottom: 0.8vh; /* Espace entre chaque ligne de texte */
+    line-height: 1.6;    /* Augmente l'espace entre les lignes d'une même phrase */
+    font-size: 1.6vw;   /* Rend le texte légèrement plus grand et lisible */
+}
+
+.registration {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vw 1vw;
+    border-radius: 100vw;
+    background: #3dd46d;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 1vw;
+    text-decoration: none;
+    font-family: 'roboto-mono';
+    margin-top: 4vh;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #fefefe;
+    }
+
+    a {
+        color: #5fa9ee;
+    }
+
+    img {
+        filter: grayscale(20%);
+        border-radius: 30px;
+    }
+}
+
+
+footer {
+    position: relative;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'roboto-mono';
+    gap: 5vw;
+    margin-top: 2.5rem;
+    margin-bottom: 10rem;
+    font-size: 1.5vw;
+}
+
+address {
+    min-width: 60vw;
+    line-height: 1.4;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 15vw;
+}
+
+.logo img {
+    height: auto;
+    width: 4vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.legal-notices {
+    max-width: 40vw;
+    line-height: 1.4;
+}
+
+h3{
+    margin: 0.8vw 0.6vw;
+    font-size: 5vw;
+}
+
+#h3-A {
+    text-align: start;
+}
+
+#h3-B {
+    text-align: center;
+}
+
+#h3-C {
+    text-align: end;
+
+}
+
+#style-switch,
+#top-link {
+  display:none;
+  position: fixed;  
+  bottom: 3vh;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3dd46d;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#style-switch {
+  left: 3vh;
+}
+
+#top-link {
+  right: 3vh;
+}

@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'righteous';
+  src: url('../assets/fonts/Righteous-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-mono';
+  src: url('../assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: darkred;
+}
+
+body {
+  position: relative;
+  background-color: black;
+  font-family: 'righteous';
+}
+
+header {
+  position: relative;
+  box-sizing: border-box;
+  background-image: url('../assets/images/reception-background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 4vw;
+  margin: 1vw;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 42vw;
+  gap: 10vw;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  padding: 5vh;
+  font-size: 9vw;
+}
+
+.next-event-registration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95vw;
+}
+
+.next-event {
+  display: flex;
+  gap: 4vw;
+  padding: 1vw 2vw;
+  background-color : rgba(29, 29, 29, .9);
+  border-radius: 1vw;
+  font-size: 0.9vw;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  font-family: 'roboto-mono';
+}
+
+.registration {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vw 1vw;
+  border-radius: 100vw;
+  background: #3dd46d;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 1vw;
+  text-decoration: none;
+  font-family: 'roboto-mono';
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vh 12vw;
+  padding: 15vh 10vw;
+}
+
+.content-block {
+  text-align: center; 
+  max-width: 40vw;
+}
+
+.content-block h2 {
+  font-size: 2.2vw;
+  margin-bottom: 1.5vh;
+}
+
+.content-block p {
+  font-size: 1.5vw;
+  line-height: 1.2;
+}
+
+footer {
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'roboto-mono';
+  gap: 5vw;
+  margin-top: 2.5rem;
+  margin-bottom: 10rem;
+  font-size: 1.5vw;
+}
+
+address {
+  min-width: 60vw;
+  line-height: 1.4;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 15vw;
+}
+
+.logo img {
+  height: auto;
+  width: 4vw;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.legal-notices {
+  max-width: 40vw;
+  line-height: 1.4;
+}
+
+h3{
+  margin: 0.8vw 0.6vw;
+  font-size: 5vw;
+}
+
+#h3-A {
+  text-align: start;
+}
+
+#h3-B {
+  text-align: center;
+}
+
+#h3-C {
+  text-align: end;
+
+}
+
+#style-switch,
+#top-link {
+  display:none;
+  position: fixed;  
+  bottom: 3vh;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3dd46d;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#style-switch {
+  left: 3vh;
+}
+
+#top-link {
+  right: 3vh;
+}
