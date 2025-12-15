@@ -217,6 +217,16 @@ h3{
     font-size: 5.5vw;
   }
 
+  .header-container {
+    gap: 10vw;
+    margin-top: 10vw;
+  }
+
+  .header-container {
+    gap: 10vw;
+    margin-top: 10vw;
+  }
+
   .next-event {
     gap: 5vw;
     padding: 2.5vw 4vw;
