@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'righteous';
+    src: url('../assets/fonts/Righteous-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto-mono';
+    src: url('../assets/fonts/RobotoMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+ 
+body {
+    position: relative;
+    background-color: black;
+    font-family: 'righteous';
+    color: whitesmoke;
+}
+ 
+header {
+    position: relative;
+    box-sizing: border-box;
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../assets/images/fondKebab.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0.5rem;
+}
+ 
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 4vw;
+    margin: 1vw;
+}
+ 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+ 
+.imagemain {
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;     
+ 
+    width: 60vw;
+    margin: 20vh auto;
+    background: rgb(23, 22, 22);
+    padding: 10vh;
+    border-radius: 4vw;
+}
+ 
+
+.formulaire {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-top: 30px;
+    font-family: 'roboto-mono'; 
+}
+ 
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+}
+ 
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #ca0000; 
+    font-weight: bold;
+}
+ 
+/* Style des champs de saisie (input, select, textarea) */
+.formulaire input, 
+.formulaire textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    background-color: #0f0e0e; 
+    color: rgb(255, 255, 255);
+    font-family: 'roboto-mono';
+    font-size: 1rem;
+    outline: none; 
+}
+ 
+/* Effet quand on clique dans un champ */
+.formulaire input:focus, 
+.formulaire textarea:focus {
+    border-color: #00000096;
+    background-color: #1a1a1a;
+}
+ 
+.btn-envoyer {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #af0000;
+    color: #0f172a;
+    font-family: 'righteous';
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+}
+ 
+.middleText ul {
+    list-style: none;
+    padding: 0;      
+    margin: 0;       
+}
+ 
+.middleText ul li {
+    margin-bottom: 10px; /* Espace entre chaque ligne de texte */
+    line-height: 1.6;    /* Augmente l'espace entre les lignes d'une même phrase */
+    font-size: 1.1rem;   /* Rend le texte légèrement plus grand et lisible */
+}
+ 
+.middleText h1 {
+    margin-top: 40px;    /* Espace au-dessus du titre */
+    margin-bottom: 15px; /* Espace en dessous du titre */
+    font-size: 1.5rem;   /* Ajustez la taille si besoin */
+}
+ 
+ 
+.center-container {
+    width: 60%;
+    margin: 0 auto;
+    background: rgb(23, 22, 22);
+    padding: 50px;
+    border-radius: 20px;
+    font-family: 'righteous-Regular';
+}
+ 
+.center-container .row {
+    margin-bottom: 20px; /* Espace entre les lignes du haut */
+    width: 100%;         /* S'assure que ça prend la largeur pour bien espacer */
+}
+ 
+ 
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+}
+ 
+ 
+ 
+.col-label {
+    width: 200px;
+    font-weight: bold;
+    font-family: 'roboto-mono';
+}
+ 
+.col-value {
+    flex: 1;
+    font-family:'roboto-mono';
+}
+ 
+ 
+@media (prefers-color-scheme: dark) {
+body {
+background-color: #000000;
+color: #fefefe;
+}
+a {
+color: #5fa9ee;
+}
+img {
+filter: grayscale(20%);
+border-radius: 30px;
+}
+}
+ 
+ 
+footer {
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../assets/images/carbon-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+ 
+.top-footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'roboto mono';
+  gap: 5vw;
+  margin-top: 2.5rem;
+  margin-bottom: 10rem;
+  font-size: 1.5vw;
+}
+ 
+address {
+  min-width: 60vw;
+  line-height: 1.4;
+}
+ 
+footer a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+}
+ 
+.legal-notices {
+  max-width: 40vw;
+  line-height: 1.4;
+}
+ 
+h3 p {
+  margin: 1rem 1.5rem;
+  font-size: 3.5rem;
+}
+ 
+#h3-A {
+  text-align: start;
+}
+ 
+#h3-B {
+  text-align: center;
+}
+ 
+#h3-C {
+  text-align: end;
+ 
+}
+ 
+ 
+ 
+.top-link {
+  display:none;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3dd46d;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
