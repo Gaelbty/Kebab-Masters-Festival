@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'about':
         styleLink.href = style === '0' ? 'styles/about-1.css' : 'styles/about-2.css';
         break;
+      case 'form':
+        styleLink.href = style === '0' ? 'styles/form-1.css' : 'styles/form-2.css';
+        break;
     }
   }
 });

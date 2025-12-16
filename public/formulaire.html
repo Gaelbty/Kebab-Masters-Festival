@@ -2,20 +2,21 @@
 <html lang="fr">
  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <meta name="description" content="Page d'inscription pour les événements à venir">
-    <title>Formulaire</title>
-    <link rel="stylesheet" href="styles/formulaire-1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/favicon.ico">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="styles/form-1.css">
+    <title>Formulaire</title>
 </head>
-<body data-page="formulaire">
+<body data-page="form">
     <header>
+        <!-- menu for navigating between pages of the site -->
         <nav class="header">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="calendar.html">Calendrier</a></li>
-                <li><a href="#About">À propos</a></li>
+                <li><a href="index.html">Accueil</a></li> <!-- website homepage -->
+                <li><a href="calendar.html">Calendrier</a></li> <!-- upcoming events page -->
+                <li><a href="about.html">À propos</a></li> <!-- association presentation page -->
             </ul>
         </nav>
     </header>
@@ -23,10 +24,10 @@
     <div class="imagemain">
         <h2>Formulaire d'inscription</h2>
  
-        <form class="formulaire" action="https://formsubmit.co/boumehdi.se13127@gmail.com" method="POST">
+        <form class="form" action="https://formsubmit.co/boumehdi.se13127@gmail.com" method="POST">
             <div class="form-group">
-                <label for="nom">Nom du maître Kebabier</label>
-                <input type="text" id="nom" name="nom" placeholder="exemple: Chef Kebabier Sami" required>
+                <label for="name">Nom du maître Kebabier</label>
+                <input type="text" id="name" name="name" placeholder="exemple: Chef Kebabier Sami" required>
             </div>
  
             <div class="form-group">
@@ -36,45 +37,75 @@
  
             <div class="form-group">
                 <label for="message">Votre message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Racontez-nous votre expérience... comme notre défunt ami Chef Kebabier Sami 🪖"></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Racontez-nous votre expérience... comme notre défunt ami Chef Kebabier Sami"></textarea>
             </div>
  
-            <button type="submit" class="btn-envoyer">Envoyer l'avis</button>
+            <button type="submit" class="send-button">Envoyer l'avis</button>
         </form>
     </div>
 </main>
-   <footer>
-		<div class="top-footer">
-			<address>
-				<p>Email :<br>
-				<a href="mailto:kebabmastersfestival@etu.univ-amu.fr">kebabmastersfestival@etu.univ-amu.fr</a></p>
- 
-				<p>413 Avenue Gaston Berger, 13100 Aix-en-Provence</p>
- 
-				<p>Réseaux sociaux :<br>
-				<a href="https://instagram.com/kebabmastersfestival">Instagram</a>
-				<a href="https://twitter.com/kebabmastersfestival">X / Twitter</a>
-				<a href="https://facebook.com/kebabmastersfestival">Facebook</a></p>
-			</address>
- 
-			<p class="legal-notices">
-	        Nouvelle collecte de fonds<br>
-	        Kebab masters festival est une organisation à but non lucratif.
-	        Les contributions sont déductibles d'impôt dans la mesure permise par la loi.
-	      	</p>
-      	</div>
- 
-		<h3>
-			<p id="h3-A">Kebab Masters Festival</p>
-			<p id="h3-B">Les maîtres du goût</p>
-			<p id="h3-C">Les rois de la broche</p>
-		</h3>
-	</footer>
-	<a href="#top" class="top-link" title="Return to top">Retour</a>
+    <footer>
+        <div class="top-footer">
+            <!-- different ways to contact or follow the association -->
+            <address>
+                <p>Email :<br>
+                <a href="mailto:kebabmastersfestival@etu.univ-amu.fr">kebabmastersfestival@etu.univ-amu.fr</a></p>
+                <p>413 Avenue Gaston Berger, 13100 Aix-en-Provence</p>
+                <p>Réseaux sociaux :<br></p>
+                <div class="logo">
+                    <a href="https://www.instagram.com/kebabmastersfestival"><img src="assets/images/instagram-logo.png" alt="Instagram"></a>
+                    <a href="https://x.com/kebab_mast88611"><img src="assets/images/x-logo.png" alt="X / Twitter"></a>
+                    <a href="https://www.facebook.com/profile.php?id=MasterKebabfestival"><img src="assets/images/facebook-logo.png" alt="Facebook"></a>
+                </div>
+            </address>
+            <!-- remarks related to the legal aspect -->
+            <p class="legal-notices">
+            Nouvelle collecte de fonds<br>
+            Kebab masters festival est une organisation à but non lucratif.
+            Les contributions sont déductibles d'impôt dans la mesure permise par la loi.
+            </p>
+        </div>
+        <h3 id="h3-A">Kebab Masters Festival</h3>
+        <h3 id="h3-B">Les maîtres du goût</h3>
+        <h3 id="h3-C">Les rois de la broche</h3>
+    </footer>
+    <!-- button allowing the user to change the site's style -->
+    <a href="#" id="style-switch">Changer le style</a>
+    <!-- button allowing the user to return to the top of the web page -->
+    <a href="#top" id="top-link">Retour</a>
+    <!-- loading the style change script -->
+    <script src="src/style-switch.js"></script>
 </body>
 </html>
- 
- 
-</body>
- 
-</html>
+
+<!--
+/
+├── public
+│   ├── assets
+│   │   ├── fonts
+│   │   │   ├── Righteous-Regular.ttf
+│   │   │   ├── RobotoMono-VariableFont_wght.ttf
+│   │   │   └── [...]
+│   │   └── images
+│   │       ├── agenda-background.jpg
+│   │       ├── carbon-background.jpg
+│   │       ├── facebook-logo.png
+│   │       ├── favicon.ico
+│   │       ├── fondKebab.jpg
+│   │       ├── instagram-logo.png
+│   │       ├── reception-background.jpg
+│   │       └── x-logo.png
+│   ├── src
+│   │   └── style-switch.js
+│   ├── styles
+│   │    ├── about-1.css
+│   │    ├── about-2.css
+│   │    ├── calendar-1.css
+│   │    ├── calendar-2.css
+│   │    ├── home-1.css
+│   │    └── home-2.css
+│   ├── about.html
+│   ├── calendar.html
+│   └── index.html
+└── README.md
+-->

@@ -76,6 +76,10 @@ nav ul {
   line-height: 1.2;
 }
 
+.important {
+  font-weight: bold;
+}
+
 footer {
   position: relative;
   box-sizing: border-box;
@@ -170,7 +174,11 @@ h3{
   }
 
   .main-content {
-    padding: 15vh 5vw;
+    padding: 15vh 8vw;
+  }
+
+  .content-block {
+    max-width: 84vw;
   }
 
   .main-content h1 {

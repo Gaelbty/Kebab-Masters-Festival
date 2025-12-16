@@ -28,7 +28,7 @@ body {
 header {
   position: relative;
   box-sizing: border-box;
-  background-image: url('../assets/images/about-background.jpg'); /* A modifier */
+  background-image: url('../assets/images/about-background.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -171,7 +171,11 @@ h3{
   }
 
   .main-content {
-    padding: 15vh 5vw;
+    padding: 15vh 8vw;
+  }
+
+  .content-block {
+    max-width: 84vw;
   }
 
   .main-content h1 {
