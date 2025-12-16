@@ -217,11 +217,6 @@ h3{
     font-size: 5.5vw;
   }
 
-  .header-container {
-    gap: 10vw;
-    margin-top: 10vw;
-  }
-
   .next-event {
     gap: 5vw;
     padding: 2.5vw 4vw;
@@ -262,5 +257,55 @@ h3{
 
   .legal-notices {
     max-width: 60vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.5) {
+  .header-container {
+    height: 70vh;
+    gap: 0;
+    margin-top: 5vw;
+  }
+  
+  .title {
+    margin-bottom: 15vh;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.6) {
+  .header-container {
+    margin-top: 10vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.7) {
+  .header-container {
+    margin-top: 12vw;
+  }
+
+  .title {
+    margin-bottom: 18vh;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.8) {
+  .header-container {
+    margin-top: 15vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.9) {
+  .title {
+    margin-bottom: 28vh;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .header-container {
+    margin-top: 25vw;
+  }
+
+  .title {
+    margin-bottom: 25vh;
   }
 }
