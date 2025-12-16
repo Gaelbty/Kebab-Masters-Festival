@@ -60,24 +60,23 @@ nav ul {
     border-radius: 4vw;
 }
  
-/* Mise en page du formulaire */
+
 .formulaire {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px; 
     margin-top: 30px;
-    font-family: 'roboto-mono'; /* On utilise ta police monospace pour le form */
+    font-family: 'roboto-mono'; 
 }
  
-/* Conteneur pour chaque label + input */
+
 .form-group {
     display: flex;
     flex-direction: column;
-    text-align: left; /* Aligne le texte à gauche pour la lisibilité */
+    text-align: left; 
 }
  
-/* Style des labels */
 .form-group label {
     margin-bottom: 8px;
     font-size: 1.1rem;
@@ -87,16 +86,15 @@ nav ul {
  
 /* Style des champs de saisie (input, select, textarea) */
 .formulaire input, 
-.formulaire select, 
 .formulaire textarea {
     padding: 12px;
     border-radius: 8px;
     border: 2px solid #333;
-    background-color: #0f0f0f; /* Fond très sombre mais pas noir pur */
-    color: whitesmoke;
+    background-color: #0f0e0e; 
+    color: rgb(255, 255, 255);
     font-family: 'roboto-mono';
     font-size: 1rem;
-    outline: none; /* Enlève le contour bleu par défaut */
+    outline: none; 
 }
  
 /* Effet quand on clique dans un champ */
@@ -106,7 +104,6 @@ nav ul {
     background-color: #1a1a1a;
 }
  
-/* Style du bouton envoyer */
 .btn-envoyer {
     margin-top: 10px;
     padding: 15px;
@@ -120,8 +117,8 @@ nav ul {
  
 .middleText ul {
     list-style: none;
-    padding: 0;      /* Force la suppression du décalage à gauche */
-    margin: 0;       /* Supprime les marges externes */
+    padding: 0;      
+    margin: 0;       
 }
  
 .middleText ul li {
