@@ -14,19 +14,19 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    color: darkred;
 }
 
 body {
     position: relative;
     background-color: black;
     font-family: 'righteous';
+    color: black;
 }
 
 header {
     position: relative;
     box-sizing: border-box;
-    background-image: url('../assets/images/agenda-background.jpg');
+    background-image: url('../assets/images/calendar-background.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -36,6 +36,7 @@ header {
 nav a {
     text-decoration: none;
     color: inherit;
+    color: whitesmoke;
     font-size: 4vw;
     margin: 1vw;
 }
@@ -48,16 +49,23 @@ nav ul {
     padding: 0;
 }
 
+main {
+    background: linear-gradient(whitesmoke, #58afd6);
+    padding: 20vh 20vw;
+}
+
 .imagemain {
     display: flex;           /* Active le mode Flexbox */
     flex-direction: column;  /* Empile les éléments verticalement si besoin */
     align-items: center;     /* Centre le bloc horizontalement */
 
     width: 60vw;
-    margin: 20vh auto;
-    background: rgb(23, 22, 22);
+    margin: 0 auto;
+    background: rgb(232, 233, 233);
     padding: 10vh;
+    border: solid;
     border-radius: 4vw;
+    border-color: black;
 }
 
 .data {
@@ -69,7 +77,6 @@ nav ul {
     margin-bottom: 5vh;
     font-family: 'roboto-mono';
 }
-
 
 .meta-headers,
 .value-1,
@@ -83,7 +90,7 @@ nav ul {
     flex-direction: column;
 }
 
-.middleText h1 {
+.middleText h2 {
     margin-top: 4vh;    /* Espace au-dessus du titre */
     margin-bottom: 1.5vh; /* Espace en dessous du titre */
     font-size: 3vw;   /* Ajustez la taille si besoin */
@@ -100,42 +107,25 @@ nav ul {
     font-size: 1.6vw;   /* Rend le texte légèrement plus grand et lisible */
 }
 
-.registration {
+#registration {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5vw 1vw;
+    padding: 1vw 2vw;
     border-radius: 100vw;
-    background: #ff4500;
+    background: #96e9e5;
     color: #0f172a;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-decoration: none;
     font-family: 'roboto-mono';
     margin-top: 4vh;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #000000;
-        color: #fefefe;
-    }
-
-    a {
-        color: #5fa9ee;
-    }
-
-    img {
-        filter: grayscale(20%);
-        border-radius: 30px;
-    }
-}
-
-
 footer {
     position: relative;
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg');
+    background-image: url('../assets/images/ice-background.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -150,6 +140,7 @@ footer {
     margin-top: 2.5rem;
     margin-bottom: 10vw;
     font-size: 1.5vw;
+    font-weight: 600;
 }
 
 address {
@@ -204,12 +195,12 @@ h3{
     bottom: 3vh;
     display: inline-block;
     padding: 12px 24px;
-    background: #ff4500;
+    background: #96e9e5;
     color: #0f172a;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    box-shadow: 0 4px 0 #c73200;
+    box-shadow: 0 4px 0 #81c9c5;
 }
 
 #style-switch {
@@ -232,6 +223,10 @@ h3{
         font-size: 2vw;
     }
 
+    main {
+        padding: 20vh 10vw;
+    }
+
     .imagemain {
         width: 80vw;
         padding: 4vw;
@@ -243,7 +238,7 @@ h3{
         font-size: 2vw;
     }
 
-    .middleText h1 {
+    .middleText h2 {
         font-size: 4.5vw;
     }
 
@@ -251,7 +246,7 @@ h3{
         font-size: 2.5vw;
     }
 
-    .registration {
+    #registration {
         padding: 1vw 2vw;
         font-size: 2.5vw;
     }

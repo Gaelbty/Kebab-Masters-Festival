@@ -26,7 +26,7 @@ body {
 header {
     position: relative;
     box-sizing: border-box;
-    background-image: url('../assets/images/agenda-background.jpg');
+    background-image: url('../assets/images/calendar-background.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -48,13 +48,18 @@ nav ul {
     padding: 0;
 }
 
+main {
+    background: linear-gradient(#b8b814, #fe1b00, #0b0f11);
+    padding: 20vh 20vw;
+}
+
 .imagemain {
     display: flex;           /* Active le mode Flexbox */
     flex-direction: column;  /* Empile les éléments verticalement si besoin */
     align-items: center;     /* Centre le bloc horizontalement */
 
     width: 60vw;
-    margin: 20vh auto;
+    margin: 0 auto;
     background: rgb(23, 22, 22);
     padding: 10vh;
     border-radius: 4vw;
@@ -70,7 +75,6 @@ nav ul {
     font-family: 'roboto-mono';
 }
 
-
 .meta-headers,
 .value-1,
 .value-2 {
@@ -83,7 +87,7 @@ nav ul {
     flex-direction: column;
 }
 
-.middleText h1 {
+.middleText h2 {
     margin-top: 4vh;    /* Espace au-dessus du titre */
     margin-bottom: 1.5vh; /* Espace en dessous du titre */
     font-size: 3vw;   /* Ajustez la taille si besoin */
@@ -100,7 +104,7 @@ nav ul {
     font-size: 1.6vw;   /* Rend le texte légèrement plus grand et lisible */
 }
 
-.registration {
+#registration {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -215,6 +219,10 @@ h3{
         font-size: 2vw;
     }
 
+    main {
+        padding: 20vh 10vw;
+    }
+
     .imagemain {
         width: 80vw;
         padding: 4vw;
@@ -226,7 +234,7 @@ h3{
         font-size: 2vw;
     }
 
-    .middleText h1 {
+    .middleText h2 {
         font-size: 4.5vw;
     }
 
@@ -234,7 +242,7 @@ h3{
         font-size: 2.5vw;
     }
 
-    .registration {
+    #registration {
         padding: 1vw 2vw;
         font-size: 2.5vw;
     }

@@ -14,20 +14,19 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    color: darkred;
 }
  
 body {
     position: relative;
     background-color: black;
     font-family: 'righteous';
-    color: whitesmoke;
+    color: black;
 }
  
 header {
     position: relative;
     box-sizing: border-box;
-    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../assets/images/fondKebab.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../assets/images/form-background.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -37,6 +36,7 @@ header {
 nav a {
     text-decoration: none;
     color: inherit;
+    color: whitesmoke;
     font-size: 4vw;
     margin: 1vw;
 }
@@ -48,6 +48,11 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+
+main {
+    background: linear-gradient(whitesmoke, #58afd6);
+    padding: 20vh 20vw;
+}
  
 .imagemain {
     display: flex;           
@@ -55,10 +60,12 @@ nav ul {
     align-items: center;     
  
     width: 60vw;
-    margin: 20vh auto;
-    background: rgb(23, 22, 22);
+    margin: 0 auto;
+    background: rgb(232, 233, 233);
     padding: 10vh;
+    border: solid;
     border-radius: 4vw;
+    border-color: black;
 }
  
 .form {
@@ -69,7 +76,7 @@ nav ul {
     margin-top: 30px;
     font-family: 'roboto-mono'; 
 }
-
+ 
 .form-group {
     display: flex;
     flex-direction: column;
@@ -79,7 +86,7 @@ nav ul {
 .form-group label {
     margin-bottom: 8px;
     font-size: 1.1rem;
-    color: #ca0000; 
+    color: #2776ab; 
     font-weight: bold;
 }
  
@@ -89,7 +96,7 @@ nav ul {
     padding: 12px;
     border-radius: 8px;
     border: 2px solid #333;
-    background-color: #0f0e0e; 
+    background-color: #ffffff; 
     color: rgb(255, 255, 255);
     font-family: 'roboto-mono';
     font-size: 1rem;
@@ -106,7 +113,7 @@ nav ul {
 .send-button {
     margin-top: 10px;
     padding: 15px;
-    background-color: #af0000;
+    background-color: #2776ab;
     color: #0f172a;
     font-family: 'righteous';
     font-size: 1.2rem;
@@ -117,7 +124,7 @@ nav ul {
 footer {
     position: relative;
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg');
+    background-image: url('../assets/images/ice-background.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -132,6 +139,7 @@ footer {
     margin-top: 2.5rem;
     margin-bottom: 10vw;
     font-size: 1.5vw;
+    font-weight: 600;
 }
 
 address {
@@ -186,12 +194,12 @@ h3{
     bottom: 3vh;
     display: inline-block;
     padding: 12px 24px;
-    background: #ff4500;
+    background: #96e9e5;
     color: #0f172a;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    box-shadow: 0 4px 0 #c73200;
+    box-shadow: 0 4px 0 #81c9c5;
 }
 
 #style-switch {
@@ -205,6 +213,10 @@ h3{
 @media (max-width: 800px) {
     nav a {
         font-size: 5.5vw;
+    }
+
+    main {
+        padding: 20vh 10vw;
     }
  
     .imagemain {

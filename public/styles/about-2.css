@@ -15,14 +15,13 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  color: darkred;
 }
 
 body {
   position: relative;
   background-color: black;
   font-family: 'righteous';
-  color: whitesmoke;
+  color: black;
 }
 
 header {
@@ -38,6 +37,7 @@ header {
 nav a {
   text-decoration: none;
   color: inherit;
+  color: whitesmoke;
   font-size: 4vw;
   margin: 1vw;
 }
@@ -48,6 +48,10 @@ nav ul {
   justify-content: space-between;
   list-style: none;
   padding: 0;
+}
+
+main {
+  background: linear-gradient(whitesmoke, #58afd6);
 }
 
 .main-content {
@@ -77,10 +81,14 @@ nav ul {
   line-height: 1.2;
 }
 
+.important {
+  font-weight: bold;
+}
+
 footer {
   position: relative;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg');
+  background-image: url('../assets/images/ice-background.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -95,6 +103,7 @@ footer {
   margin-top: 2.5rem;
   margin-bottom: 10vw;
   font-size: 1.5vw;
+  font-weight: 600;
 }
 
 address {
@@ -149,12 +158,12 @@ h3{
   bottom: 3vh;
   display: inline-block;
   padding: 12px 24px;
-  background: #ff4500;
+  background: #96e9e5;
   color: #0f172a;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  box-shadow: 0 4px 0 #c73200;
+  box-shadow: 0 4px 0 #81c9c5;
 }
 
 #style-switch {

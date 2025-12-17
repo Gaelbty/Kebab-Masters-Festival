@@ -49,6 +49,10 @@ nav ul {
   padding: 0;
 }
 
+main {
+  background: linear-gradient(#b8b814, #fe1b00, #0b0f11);
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
