@@ -1,14 +1,22 @@
 @font-face {
     font-family: 'righteous';
+    font-display: swap;
     src: url('../assets/fonts/Righteous-Regular.ttf');
     font-weight: normal;
     font-style: normal;
+    ascent-override: 100%;
+    descent-override: 0%;
+    line-gap-override: 0%;
 }
 @font-face {
     font-family: 'roboto-mono';
+    font-display: swap;
     src: url('../assets/fonts/RobotoMono-Regular.ttf');
     font-weight: normal;
     font-style: normal;
+    ascent-override: 100%;
+    descent-override: 35%;
+    line-gap-override: 10%;
 }
  
 * {
@@ -47,6 +55,23 @@ nav ul {
     justify-content: space-between;
     list-style: none;
     padding: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vw;
+  margin-top: 2vw;
+  color: whitesmoke;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  padding: 5vh;
+  font-size: 9vw;
 }
 
 main {
@@ -96,18 +121,18 @@ main {
     padding: 12px;
     border-radius: 8px;
     border: 2px solid #333;
-    background-color: #ffffff; 
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
     font-family: 'roboto-mono';
     font-size: 1rem;
-    outline: none; 
+    outline: none;
+    color: grey;
 }
  
 /* Effet quand on clique dans un champ */
 .form input:focus,
 .form textarea:focus {
     border-color: #00000096;
-    background-color: #1a1a1a;
+    background-color: whitesmoke;
 }
  
 .send-button {
@@ -154,8 +179,8 @@ address {
 }
 
 .logo img {
-    height: auto;
-    width: 4vw;
+  width: 100%;
+  height: auto;
 }
 
 footer a {
@@ -236,10 +261,61 @@ h3{
     }
 
     .logo img {
-        width: 6vw;
+        width: 80%;
+        height: auto;
     }
 
     .legal-notices {
         max-width: 60vw;
     }
+}
+
+@media (max-aspect-ratio: 1 / 0.5) {
+  .header-container {
+    height: 70vh;
+    gap: 0;
+    margin-top: 5vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.6) {
+  .header-container {
+    margin-top: 8vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.7) {
+  .header-container {
+    margin-top: 10vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.8) {
+  .header-container {
+    margin-top: 12vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 0.9) {
+  .header-container {
+    margin-top: 14vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .header-container {
+    margin-top: 16vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 1.1) {
+  .header-container {
+    margin-top: 18vw;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 1.2) {
+  .header-container {
+    margin-top: 20vw;
+  }
 }

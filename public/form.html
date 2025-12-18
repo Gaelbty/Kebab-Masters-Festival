@@ -6,7 +6,9 @@
     <meta name="description" content="Page d'inscription pour les événements à venir">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/favicon.ico">
-    <link id="theme-style" rel="stylesheet" type="text/css" href="styles/form-1.css">
+    <link rel="preload" href="assets/fonts/Righteous-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/RobotoMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link id="theme-style" rel="stylesheet" type="text/css" href="styles/form-1.css" blocking="render">
     <title>Formulaire</title>
 </head>
 <body data-page="form">
@@ -19,6 +21,9 @@
                 <li><a href="about.html">À propos</a></li> <!-- association presentation page -->
             </ul>
         </nav>
+        <div class="header-container">
+            <h1 class="title">Inscription</h1>
+        </div>
     </header>
    <main>
     <div class="imagemain">
@@ -53,9 +58,9 @@
                 <p>413 Avenue Gaston Berger, 13100 Aix-en-Provence</p>
                 <p>Réseaux sociaux :<br></p>
                 <div class="logo">
-                    <a href="https://www.instagram.com/kebabmastersfestival"><img src="assets/images/instagram-logo.png" alt="Instagram"></a>
-                    <a href="https://x.com/kebab_mast88611"><img src="assets/images/x-logo.png" alt="X / Twitter"></a>
-                    <a href="https://www.facebook.com/profile.php?id=MasterKebabfestival"><img src="assets/images/facebook-logo.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/kebabmastersfestival"><img src="assets/images/instagram-logo.png" width="43" height="43" alt="Instagram"></a>
+                    <a href="https://x.com/kebab_mast88611"><img src="assets/images/x-logo.png" width="43" height="43" alt="X / Twitter"></a>
+                    <a href="https://www.facebook.com/profile.php?id=MasterKebabfestival"><img src="assets/images/facebook-logo.png" width="43" height="43" alt="Facebook"></a>
                 </div>
             </address>
             <!-- remarks related to the legal aspect -->
@@ -74,7 +79,7 @@
     <!-- button allowing the user to return to the top of the web page -->
     <a href="#top" id="top-link">Retour</a>
     <!-- loading the style change script -->
-    <script src="src/style-switch.js"></script>
+    <script src="src/style-switch.js" defer></script>
 </body>
 </html>
 
@@ -83,8 +88,7 @@ public
 ├── assets
 │   ├── fonts
 │   │   ├── Righteous-Regular.ttf
-│   │   ├── RobotoMono-VariableFont_wght.ttf
-│   │   └── [...]
+│   │   └── RobotoMono-Regular.ttf
 │   └── images
 │       ├── about-background.jpg
 │       ├── calendar-background.jpg
