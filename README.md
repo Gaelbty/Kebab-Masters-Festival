@@ -18,6 +18,7 @@
 │   │       ├── ice-background.jpg
 │   │       ├── instagram-logo.png
 │   │       ├── reception-background.jpg
+│   │       ├── video-background.jpg
 │   │       └── x-logo.png
 │   ├── src
 │   │   └── style-switch.js

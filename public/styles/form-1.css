@@ -184,6 +184,22 @@ footer a {
     text-decoration: underline;
 }
 
+#notice {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8vw 1.2vw;
+  border-radius: 100vw;
+  margin-top: 5vh;
+  background: #ff4500;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 1.4vw;
+  text-decoration: none;
+  font-family: 'roboto-mono';
+  box-shadow: 0 4px 0 #c73200;
+}
+
 .legal-notices {
     max-width: 40vw;
     line-height: 1.4;
@@ -258,6 +274,11 @@ h3{
     .logo img {
         width: 80%;
         height: auto;
+    }
+
+    #notice {
+        padding: 1vw 2vw;
+        font-size: 2vw;
     }
 
     .legal-notices {

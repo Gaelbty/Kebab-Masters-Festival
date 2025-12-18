@@ -7,7 +7,10 @@
 	<link rel="icon" href="assets/images/favicon.ico">
 	<link rel="preload" href="assets/fonts/Righteous-Regular.ttf" as="font" type="font/ttf" crossorigin>
 	<link rel="preload" href="assets/fonts/RobotoMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
-	<link id="theme-style" rel="stylesheet" type="text/css" href="styles/home-1.css" blocking="render">
+    <link id="theme-style" rel="preload" href="styles/home-1.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link id="theme-style" rel="stylesheet" href="styles/home-1.css">
+    </noscript>
 	<title>Accueil</title>
 </head>
 <body data-page="home">
@@ -47,6 +50,19 @@
 		</div>
 	</header>
 	<main>
+		<!-- website presentation video -->
+		<div class="video-container">
+			<iframe
+				width="560"
+				height="315"
+				src="https://www.youtube-nocookie.com/embed/2tDOZ75dEbQ"
+				srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/2tDOZ75dEbQ?autoplay=1><img src=assets/images/video-background.jpg alt='Kebab Masters Festival'><span>▶</span></a>"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+				title="Kebab Masters Festival"
+				loading="lazy">
+			</iframe>
+		</div>
 		<!-- description of the activities offered during events organized by the association -->
 		<section class="main-content">
 			<div class="content-block">
@@ -87,7 +103,8 @@
 					<a href="https://www.instagram.com/kebabmastersfestival"><img src="assets/images/instagram-logo.png" width="43" height="43" alt="Instagram"></a>
 					<a href="https://x.com/kebab_mast88611"><img src="assets/images/x-logo.png" width="43" height="43" alt="X / Twitter"></a>
 					<a href="https://www.facebook.com/profile.php?id=MasterKebabfestival"><img src="assets/images/facebook-logo.png" width="43" height="43" alt="Facebook"></a>
-				</div>
+				</div><br>
+				<a id="notice" href="mailto:boumehdi.se13127@gmail.com?subject=Avis%20pour%20Kebab%20Masters%20Festival&body=Votre%20nom%20:%0AVotre%20prénom%20:%0AVotre%20avis%20:">Donnez-nous votre avis</a>
 			</address>
 			<!-- remarks related to the legal aspect -->
 			<p class="legal-notices">
@@ -125,6 +142,7 @@ public
 │       ├── ice-background.jpg
 │       ├── instagram-logo.png
 │       ├── reception-background.jpg
+│       ├── video-background.jpg
 │       └── x-logo.png
 ├── src
 │   └── style-switch.js

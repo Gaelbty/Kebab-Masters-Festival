@@ -111,7 +111,7 @@ main {
 footer {
   position: relative;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg'); /* A modifier */
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/carbon-background.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -148,6 +148,22 @@ footer a {
   text-decoration: none;
   color: inherit;
   text-decoration: underline;
+}
+
+#notice {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8vw 1.2vw;
+  border-radius: 100vw;
+  margin-top: 5vh;
+  background: #ff4500;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 1.4vw;
+  text-decoration: none;
+  font-family: 'roboto-mono';
+  box-shadow: 0 4px 0 #c73200;
 }
 
 .legal-notices {
@@ -234,6 +250,11 @@ h3{
   .logo img {
     width: 80%;
     height: auto;
+  }
+
+  #notice {
+    padding: 1vw 2vw;
+    font-size: 2vw;
   }
 
   .legal-notices {

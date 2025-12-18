@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const styleLink = document.getElementById('theme-style');
   const page = document.body.dataset.page;
 
-  // Lire le cookie au chargement
+  // Read the cookie on loading
   let style = getCookie('style');
 
-  // Appliquer le style au chargement
+  // Apply style to load
   applyStyle(style);
 
-  // Changement du style
+  // Style change
   switcher.addEventListener('click', e => {
     e.preventDefault();
 
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// fonction pour récupérer le cookie
 function getCookie(name) {
   const cookies = document.cookie.split('; ');
   for (let cookie of cookies) {

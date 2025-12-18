@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
- 
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Page d'inscription pour les événements à venir">
@@ -8,7 +7,10 @@
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="preload" href="assets/fonts/Righteous-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="assets/fonts/RobotoMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link id="theme-style" rel="stylesheet" type="text/css" href="styles/form-1.css" blocking="render">
+    <link id="theme-style" rel="preload" href="styles/form-1.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link id="theme-style" rel="stylesheet" href="styles/form-1.css">
+    </noscript>
     <title>Formulaire</title>
 </head>
 <body data-page="form">
@@ -25,30 +27,31 @@
             <h1 class="title">Inscription</h1>
         </div>
     </header>
-   <main>
-    <div class="imagemain">
-        <h2>Formulaire d'inscription</h2>
- 
-        <form class="form" action="https://formsubmit.co/boumehdi.se13127@gmail.com" method="POST">
-            <div class="form-group">
-                <label for="name">Nom du maître Kebabier</label>
-                <input type="text" id="name" name="name" placeholder="exemple: Chef Kebabier Sami" required>
-            </div>
- 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="exemple: ChefSami@gmail.com" required>
-            </div>
- 
-            <div class="form-group">
-                <label for="message">Votre message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Racontez-nous votre expérience... comme notre défunt ami Chef Kebabier Sami"></textarea>
-            </div>
- 
-            <button type="submit" class="send-button">Envoyer l'avis</button>
-        </form>
-    </div>
-</main>
+    <main>
+        <!-- different ways to contact or follow the association -->
+        <div class="imagemain">
+            <h2>Formulaire d'inscription</h2>
+     
+            <form class="form" action="https://formsubmit.co/boumehdi.se13127@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom du maître Kebabier</label>
+                    <input type="text" id="name" name="name" placeholder="exemple: Chef Kebabier Sami" required>
+                </div>
+     
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="exemple: ChefSami@gmail.com" required>
+                </div>
+     
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Racontez-nous votre expérience... comme notre défunt ami Chef Kebabier Sami"></textarea>
+                </div>
+     
+                <button type="submit" class="send-button">Envoyer l'avis</button>
+            </form>
+        </div>
+    </main>
     <footer>
         <div class="top-footer">
             <!-- different ways to contact or follow the association -->
@@ -61,7 +64,8 @@
                     <a href="https://www.instagram.com/kebabmastersfestival"><img src="assets/images/instagram-logo.png" width="43" height="43" alt="Instagram"></a>
                     <a href="https://x.com/kebab_mast88611"><img src="assets/images/x-logo.png" width="43" height="43" alt="X / Twitter"></a>
                     <a href="https://www.facebook.com/profile.php?id=MasterKebabfestival"><img src="assets/images/facebook-logo.png" width="43" height="43" alt="Facebook"></a>
-                </div>
+                </div><br>
+                <a id="notice" href="mailto:name@email.com?subject=notice">Donnez-nous votre avis</a>
             </address>
             <!-- remarks related to the legal aspect -->
             <p class="legal-notices">
@@ -99,6 +103,7 @@ public
 │       ├── ice-background.jpg
 │       ├── instagram-logo.png
 │       ├── reception-background.jpg
+│       ├── video-background.jpg
 │       └── x-logo.png
 ├── src
 │   └── style-switch.js

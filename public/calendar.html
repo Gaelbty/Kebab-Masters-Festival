@@ -7,7 +7,10 @@
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="preload" href="assets/fonts/Righteous-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="assets/fonts/RobotoMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link id="theme-style" rel="stylesheet" type="text/css" href="styles/calendar-1.css" blocking="render">
+    <link id="theme-style" rel="preload" href="styles/calendar-1.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link id="theme-style" rel="stylesheet" href="styles/calendar-1.css">
+    </noscript>
     <title>Calendrier</title>
 </head>
 <body data-page="calendar">
@@ -78,7 +81,8 @@
                     <a href="https://www.instagram.com/kebabmastersfestival"><img src="assets/images/instagram-logo.png" width="43" height="43" alt="Instagram"></a>
                     <a href="https://x.com/kebab_mast88611"><img src="assets/images/x-logo.png" width="43" height="43" alt="X / Twitter"></a>
                     <a href="https://www.facebook.com/profile.php?id=MasterKebabfestival"><img src="assets/images/facebook-logo.png" width="43" height="43" alt="Facebook"></a>
-                </div>
+                </div><br>
+                <a id="notice" href="mailto:name@email.com?subject=notice">Donnez-nous votre avis</a>
 			</address>
             <!-- remarks related to the legal aspect -->
 			<p class="legal-notices">
@@ -116,6 +120,7 @@ public
 │       ├── ice-background.jpg
 │       ├── instagram-logo.png
 │       ├── reception-background.jpg
+│       ├── video-background.jpg
 │       └── x-logo.png
 ├── src
 │   └── style-switch.js
