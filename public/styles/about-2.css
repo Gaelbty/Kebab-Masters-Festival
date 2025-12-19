@@ -86,7 +86,7 @@ main {
   padding: 15vh 18vw;
 }
 
-.main-content h1 {
+.main-content h2 {
   font-size: 3.5vw;
   margin-bottom: 1.4vw;
 }
@@ -96,7 +96,7 @@ main {
   max-width: 64vw;
 }
 
-.content-block h2 {
+.content-block h4 {
   font-size: 2.2vw;
   margin-bottom: 1.2vw;
 }
@@ -228,11 +228,11 @@ h3{
     max-width: 84vw;
   }
 
-  .main-content h1 {
+  .main-content h2 {
     font-size: 6vw;
   }
 
-  .content-block h2 {
+  .content-block h4 {
     font-size: 4vw;
   }
 

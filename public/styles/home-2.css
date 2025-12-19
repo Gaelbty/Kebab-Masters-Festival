@@ -270,6 +270,11 @@ h3{
     padding: 1vw 2vw;
     font-size: 2vw;
   }
+  
+  iframe {
+    width: 80vw;
+    height: auto;
+  }
 
   .main-content {
     padding: 15vh 5vw;
