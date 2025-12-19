@@ -7,7 +7,6 @@
 │   │   ├── fonts
 │   │   │   ├── Righteous-Regular.ttf
 │   │   │   ├── RobotoMono-VariableFont_wght.ttf
-│   │   │   └── [...]
 │   │   └── images
 │   │       ├── about-background.jpg
 │   │       ├── calendar-background.jpg
